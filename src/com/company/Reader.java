@@ -1,7 +1,8 @@
 package com.company;
+import javax.xml.bind.SchemaOutputResolver;
 import java.util.Scanner;
 
-public class Reader{
+public class Reader {
     private Scanner input = new Scanner(System.in);
 
 
@@ -13,6 +14,7 @@ public class Reader{
     }
     public String readLine(String prompt){
         System.out.print(prompt);
+        System.out.println("");
         String str = input.nextLine();
         return str;
     }

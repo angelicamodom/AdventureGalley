@@ -1,14 +1,10 @@
 package com.company;
 
-/**
- * Created by andy on 3/5/18.
- */
-public class Banana extends Item {
+public class Baseball extends Item {
 
-    public Banana() {
-        super("banana", "a delicious yellow banana.", true);
+    Baseball() {
+        super("baseball", "It is a pearly white baseball.", false);
     }
-
     @Override
     public String handle(String s) {
         if (s.equalsIgnoreCase("examine")) {

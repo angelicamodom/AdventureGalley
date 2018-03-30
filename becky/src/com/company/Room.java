@@ -1,6 +1,4 @@
 package com.company;
-import com.company.Items.Item;
-
 import java.util.HashMap;
 import java.util.Set;
 
@@ -18,10 +16,6 @@ public class Room {
 
     }
 
-    public String listItemsInRoom() {
-        return roomInventory.toString();
-    }
-
     public boolean hasRoom(String name) {
         return connectedRooms.containsKey(name);
     }
@@ -29,6 +23,7 @@ public class Room {
     public Room getRoom(String name) {
         return connectedRooms.get(name);
     }
+
 
     //This method gets a Room, then uses its name to add it to the list of connected rooms.
     public void addRoom(Room room) {
@@ -53,17 +48,5 @@ public class Room {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public void addItem(Item i) {
-        roomInventory.addItem(i);
-    }
-
-    public boolean hasItem(String name) {
-        return roomInventory.hasItem(name);
-    }
-
-    public Item getItem(String name) {
-        return roomInventory.getItem(name);
     }
 }
